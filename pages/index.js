@@ -19,7 +19,8 @@ class App extends Component {
           style={{
             height: 900,
             justifyContent: "center",
-            alignItems: "center"
+            alignItems: "center",
+            textAlign: "center"
           }}
         >
           <Image
@@ -29,7 +30,7 @@ class App extends Component {
             style={{ width: 350, height: 225 }}
           />
           <Text style={{ fontSize: 40, marginTop: 20 }}>
-            Sage Hill School's First Hackathon 👋
+            Sage Hill School's First Hackathon
           </Text>
           <Text style={{ fontSize: 40, marginTop: 5 }}>
             January 17-18, 2020
@@ -41,8 +42,11 @@ class App extends Component {
               padding: 10,
               marginTop: 10
             }}
+            onClick={() =>
+              Linking.openURL("https://jackien1.typeform.com/to/Gattb7")
+            }
           >
-            <Text style={{ color: "white", fontSize: 20 }}> Coming Soon </Text>
+            <Text style={{ color: "white", fontSize: 20 }}> Apply Now 👋 </Text>
           </TouchableOpacity>
         </View>
 
@@ -54,7 +58,7 @@ class App extends Component {
           }}
         >
           <div
-            style={{ flexDirection: "column", width: 750, textAlign: "center" }}
+            style={{ flexDirection: "column", width: 500, textAlign: "center" }}
           >
             <div style={{ textAlign: "center" }}>
               <Text
@@ -74,7 +78,7 @@ class App extends Component {
           </div>
 
           <div
-            style={{ flexDirection: "column", width: 750, textAlign: "center" }}
+            style={{ flexDirection: "column", width: 500, textAlign: "center" }}
           >
             <div style={{ textAlign: "center" }}>
               <Text style={{ fontSize: 30, fontWeight: "bold" }}>
@@ -86,6 +90,58 @@ class App extends Component {
               students from all around, and potentially win prizes.
             </Text>
           </div>
+        </View>
+
+        <View
+          style={{
+            alignItems: "center",
+            height: 500,
+            justifyContent: "center"
+          }}
+        >
+          <div style={{ width: 500, textAlign: "center" }}>
+            <Text
+              style={{
+                fontSize: 30,
+                fontWeight: "bold"
+              }}
+            >
+              Challenges
+            </Text>
+            <div>
+              <Text style={{ fontSize: 20 }}>
+                “Build something that addresses a specific need in your
+                community”
+              </Text>
+            </div>
+          </div>
+
+          <View
+            style={{
+              flexDirection: "row",
+              justifyContent: "space-around",
+              width: 500,
+              marginTop: 50
+            }}
+          >
+            <div>
+              <Text style={{ fontSize: 20 }}>
+                <Text style={{ fontStyle: "italic" }}> Educational </Text> 📚
+              </Text>
+            </div>
+
+            <div>
+              <Text style={{ fontSize: 20 }}>
+                <Text style={{ fontStyle: "italic" }}> Health </Text> 🏥
+              </Text>
+            </div>
+
+            <div>
+              <Text style={{ fontSize: 20 }}>
+                <Text style={{ fontStyle: "italic" }}> Environmental </Text> 🍃
+              </Text>
+            </div>
+          </View>
         </View>
 
         <View
