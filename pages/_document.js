@@ -13,6 +13,7 @@ class CustomDocument extends Document {
             type="image/png"
             href="https://sagehack.s3.eu-west-3.amazonaws.com/favicon.png"
           />
+          <title>SageHack</title>
         </Head>
         <body>
           <Main />

@@ -8,7 +8,8 @@ import {
   TouchableOpacity,
   ScrollView,
   Dimensions,
-  Linking
+  Linking,
+  TouchableWithoutFeedback
 } from "react-native";
 
 class App extends Component {
@@ -54,52 +55,10 @@ class App extends Component {
           style={{
             alignItems: "center",
             height: 500,
-            justifyContent: "space-around"
-          }}
-        >
-          <div
-            style={{ flexDirection: "column", width: 500, textAlign: "center" }}
-          >
-            <div style={{ textAlign: "center" }}>
-              <Text
-                style={{
-                  fontSize: 30,
-                  fontWeight: "bold",
-                  textAlign: "center"
-                }}
-              >
-                So what's a hackathon?
-              </Text>
-            </div>
-            <Text style={{ fontSize: 20 }}>
-              A 24-hour competition where participants create a software project
-              for judging.
-            </Text>
-          </div>
-
-          <div
-            style={{ flexDirection: "column", width: 500, textAlign: "center" }}
-          >
-            <div style={{ textAlign: "center" }}>
-              <Text style={{ fontSize: 30, fontWeight: "bold" }}>
-                And why should I come?
-              </Text>
-            </div>
-            <Text style={{ fontSize: 20 }}>
-              You'll learn new programming skills from workshops, engage with
-              students from all around, and potentially win prizes.
-            </Text>
-          </div>
-        </View>
-
-        <View
-          style={{
-            alignItems: "center",
-            height: 500,
             justifyContent: "center"
           }}
         >
-          <div style={{ width: 500, textAlign: "center" }}>
+          <div style={{ textAlign: "center" }}>
             <Text
               style={{
                 fontSize: 30,
@@ -120,8 +79,7 @@ class App extends Component {
             style={{
               flexDirection: "row",
               justifyContent: "space-around",
-              width: 500,
-              marginTop: 50
+              marginTop: 25
             }}
           >
             <div>
@@ -142,6 +100,283 @@ class App extends Component {
               </Text>
             </div>
           </View>
+        </View>
+
+        <View
+          style={{
+            alignItems: "center",
+            height: 500,
+            justifyContent: "center"
+          }}
+        >
+          <div
+            style={{
+              flexDirection: "column",
+              justifyContent: "center",
+              alignItems: "center",
+              textAlign: "center"
+            }}
+          >
+            <Text
+              style={{
+                fontSize: 30,
+                fontWeight: "bold",
+                textAlign: "center"
+              }}
+            >
+              Schedule
+            </Text>
+            <View>
+              <Text
+                style={{
+                  fontSize: 20,
+                  textAlign: "center"
+                }}
+              >
+                Day One (Friday)
+              </Text>
+            </View>
+            <View
+              style={{
+                flexDirection: "row",
+                justifyContent: "space-between"
+              }}
+            >
+              <Text style={{ fontSize: 20, marginRight: 200 }}>
+                Registration
+              </Text>
+              <Text style={{ fontSize: 20 }}>4pm - 5pm</Text>
+            </View>
+
+            <View
+              style={{ flexDirection: "row", justifyContent: "space-between" }}
+            >
+              <Text style={{ fontSize: 20 }}>Speaker</Text>
+              <Text style={{ fontSize: 20 }}> 5pm - 5:30pm </Text>
+            </View>
+
+            <View
+              style={{ flexDirection: "row", justifyContent: "space-between" }}
+            >
+              <Text style={{ fontSize: 20 }}>Pairings</Text>
+              <Text style={{ fontSize: 20 }}> 5:30pm - 6pm </Text>
+            </View>
+
+            <View
+              style={{ flexDirection: "row", justifyContent: "space-between" }}
+            >
+              <Text style={{ fontSize: 20 }}>Code Sprint</Text>
+              <Text style={{ fontSize: 20 }}> 6pm - 9pm </Text>
+            </View>
+
+            <View>
+              <Text
+                style={{
+                  fontSize: 20,
+                  textAlign: "center"
+                }}
+              >
+                Day Two (Saturday)
+              </Text>
+            </View>
+            <View
+              style={{
+                flexDirection: "row",
+                justifyContent: "space-between"
+              }}
+            >
+              <Text style={{ fontSize: 20, marginRight: 200 }}>Check-in</Text>
+              <Text style={{ fontSize: 20 }}>8am - 9am</Text>
+            </View>
+
+            <View
+              style={{ flexDirection: "row", justifyContent: "space-between" }}
+            >
+              <Text style={{ fontSize: 20 }}>Code Sprint</Text>
+              <Text style={{ fontSize: 20 }}> 9pm - 3pm </Text>
+            </View>
+
+            <View
+              style={{ flexDirection: "row", justifyContent: "space-between" }}
+            >
+              <Text style={{ fontSize: 20 }}>Presentations</Text>
+              <Text style={{ fontSize: 20 }}> 3pm - 5pm </Text>
+            </View>
+
+            <View
+              style={{ flexDirection: "row", justifyContent: "space-between" }}
+            >
+              <Text style={{ fontSize: 20 }}>Judging</Text>
+              <Text style={{ fontSize: 20 }}> 5pm - 6pm </Text>
+            </View>
+
+            <View
+              style={{ flexDirection: "row", justifyContent: "space-between" }}
+            >
+              <Text style={{ fontSize: 20 }}>Awards Ceremony</Text>
+              <Text style={{ fontSize: 20 }}> 6pm - 7pm </Text>
+            </View>
+          </div>
+        </View>
+
+        <View style={{ justifyContent: "center", alignItems: "center" }}>
+          <Text style={{ fontSize: 30, fontWeight: "bold" }}>FAQ</Text>
+          <TouchableWithoutFeedback>
+            <View style={{ width: 350 }}>
+              <Text
+                style={{
+                  fontSize: 20,
+                  borderWidth: 1,
+                  borderRadius: 2,
+                  borderColor: "#ddd",
+                  borderBottomWidth: 0,
+                  shadowColor: "#000",
+                  shadowOffset: { width: 0, height: 2 },
+                  shadowOpacity: 0.1,
+                  shadowRadius: 2,
+                  padding: 5
+                }}
+              >
+                What is a hackathon?
+              </Text>
+
+              <View>
+                <Text>
+                  A 24-hour coding competition where participants make a
+                  software project for judging.
+                </Text>
+              </View>
+            </View>
+          </TouchableWithoutFeedback>
+
+          <TouchableWithoutFeedback>
+            <View style={{ width: 350 }}>
+              <Text
+                style={{
+                  fontSize: 20,
+                  borderWidth: 1,
+                  borderRadius: 2,
+                  borderColor: "#ddd",
+                  borderBottomWidth: 0,
+                  shadowColor: "#000",
+                  shadowOffset: { width: 0, height: 2 },
+                  shadowOpacity: 0.1,
+                  shadowRadius: 2,
+                  padding: 5
+                }}
+              >
+                What if I'm new?
+              </Text>
+
+              <View>
+                <Text>
+                  Have no fear! We have mentors and workshops to get everyone up
+                  and running.
+                </Text>
+              </View>
+            </View>
+          </TouchableWithoutFeedback>
+
+          <TouchableWithoutFeedback>
+            <View style={{ width: 350 }}>
+              <Text
+                style={{
+                  fontSize: 20,
+                  borderWidth: 1,
+                  borderRadius: 2,
+                  borderColor: "#ddd",
+                  borderBottomWidth: 0,
+                  shadowColor: "#000",
+                  shadowOffset: { width: 0, height: 2 },
+                  shadowOpacity: 0.1,
+                  shadowRadius: 2,
+                  padding: 5
+                }}
+              >
+                Where is SageHack?
+              </Text>
+
+              <View>
+                <Text>20402 Newport Coast Dr, Newport Coast, CA 92657</Text>
+              </View>
+            </View>
+          </TouchableWithoutFeedback>
+
+          <TouchableWithoutFeedback>
+            <View style={{ width: 350 }}>
+              <Text
+                style={{
+                  fontSize: 20,
+                  borderWidth: 1,
+                  borderRadius: 2,
+                  borderColor: "#ddd",
+                  borderBottomWidth: 0,
+                  shadowColor: "#000",
+                  shadowOffset: { width: 0, height: 2 },
+                  shadowOpacity: 0.1,
+                  shadowRadius: 2,
+                  padding: 5
+                }}
+              >
+                Who can come?
+              </Text>
+
+              <View>
+                <Text>All high school students in California.</Text>
+              </View>
+            </View>
+          </TouchableWithoutFeedback>
+
+          <TouchableWithoutFeedback>
+            <View style={{ width: 350 }}>
+              <Text
+                style={{
+                  fontSize: 20,
+                  borderWidth: 1,
+                  borderRadius: 2,
+                  borderColor: "#ddd",
+                  borderBottomWidth: 0,
+                  shadowColor: "#000",
+                  shadowOffset: { width: 0, height: 2 },
+                  shadowOpacity: 0.1,
+                  shadowRadius: 2,
+                  padding: 5
+                }}
+              >
+                What are the benefits?
+              </Text>
+              <View>
+                <Text>
+                  Free meals and snacks. Plus, you may potentially win some
+                  prizes.
+                </Text>
+              </View>
+            </View>
+          </TouchableWithoutFeedback>
+
+          <TouchableWithoutFeedback>
+            <View style={{ width: 350 }}>
+              <Text
+                style={{
+                  fontSize: 20,
+                  borderWidth: 1,
+                  borderRadius: 2,
+                  borderColor: "#ddd",
+                  borderBottomWidth: 0,
+                  shadowColor: "#000",
+                  shadowOffset: { width: 0, height: 2 },
+                  shadowOpacity: 0.1,
+                  shadowRadius: 2,
+                  padding: 5
+                }}
+              >
+                Can you work on the code before?
+              </Text>
+              <View>
+                <Text>No.</Text>
+              </View>
+            </View>
+          </TouchableWithoutFeedback>
         </View>
 
         <View
