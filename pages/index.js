@@ -193,7 +193,7 @@ class App extends Component {
               style={{ flexDirection: "row", justifyContent: "space-between" }}
             >
               <Text style={{ fontSize: 20 }}>Code Sprint</Text>
-              <Text style={{ fontSize: 20 }}> 9pm - 3pm </Text>
+              <Text style={{ fontSize: 20 }}> 9am - 3pm </Text>
             </View>
 
             <View
