@@ -219,7 +219,13 @@ class App extends Component {
           </div>
         </View>
 
-        <View style={{ justifyContent: "center", alignItems: "center" }}>
+        <View
+          style={{
+            justifyContent: "center",
+            alignItems: "center",
+            height: 500
+          }}
+        >
           <Text style={{ fontSize: 30, fontWeight: "bold" }}>FAQ</Text>
           <TouchableWithoutFeedback>
             <View style={{ width: 350 }}>
@@ -420,7 +426,11 @@ class App extends Component {
           />
           <Image
             source="https://sagehack.s3.eu-west-3.amazonaws.com/732c2a360edfdef425ff097b02830ad5e1880ab8.png"
-            style={{ width: 400, height: 100 }}
+            style={{ width: 300, height: 75 }}
+          />
+          <Image
+            source="https://sagehack.s3.eu-west-3.amazonaws.com/286fcd415deb9f4134f04584b7c21927e5047b68.png"
+            style={{ width: 300, height: 75 }}
           />
         </View>
       </ScrollView>
