@@ -407,11 +407,9 @@ class App extends Component {
               <Text style={{ fontSize: 20 }}>
                 Interested? Email{" "}
                 <Text
-                  onPress={() =>
-                    Linking.openURL("mailto:jackieni2002@gmail.com")
-                  }
+                  onPress={() => Linking.openURL("mailto:info@sagehack.io")}
                 >
-                  jackieni2002@gmail.com
+                  info@sagehack.io
                 </Text>
               </Text>
             </div>
@@ -419,6 +417,10 @@ class App extends Component {
           <Image
             source="https://sagehack.s3.eu-west-3.amazonaws.com/0.png"
             style={{ width: 200, height: 200 }}
+          />
+          <Image
+            source="https://sagehack.s3.eu-west-3.amazonaws.com/732c2a360edfdef425ff097b02830ad5e1880ab8.png"
+            style={{ width: 400, height: 100 }}
           />
         </View>
       </ScrollView>
