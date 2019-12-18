@@ -388,7 +388,7 @@ class App extends Component {
         <View
           style={{
             alignItems: "center",
-            height: 500,
+            height: 1000,
             justifyContent: "center"
           }}
         >
@@ -431,6 +431,14 @@ class App extends Component {
           <Image
             source="https://sagehack.s3.eu-west-3.amazonaws.com/286fcd415deb9f4134f04584b7c21927e5047b68.png"
             style={{ width: 300, height: 75 }}
+          />
+          <Image
+            source="https://sagehack.s3.eu-west-3.amazonaws.com/20172349.png"
+            style={{ width: 200, height: 200 }}
+          />
+          <Image
+            source="https://sagehack.s3.eu-west-3.amazonaws.com/sdwfdeotz3ujbaeqsae5.png"
+            style={{ width: 200, height: 200 }}
           />
         </View>
       </ScrollView>
