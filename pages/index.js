@@ -173,6 +173,20 @@ class App extends Component {
               <Text
                 style={{
                   fontSize: 20,
+                  textAlign: "center",
+                  fontStyle: "italic",
+                  marginTop: 15,
+                  marginBottom: 15
+                }}
+              >
+                *Participants return home (not overnight event)*
+              </Text>
+            </View>
+
+            <View>
+              <Text
+                style={{
+                  fontSize: 20,
                   textAlign: "center"
                 }}
               >
