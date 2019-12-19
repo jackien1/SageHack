@@ -406,7 +406,7 @@ class App extends Component {
             justifyContent: "center"
           }}
         >
-          <div
+          <View
             style={{
               flexDirection: "column",
               justifyContent: "center",
@@ -433,11 +433,27 @@ class App extends Component {
                 </Text>
               </Text>
             </div>
-          </div>
-          <Image
-            source="https://sagehack.s3.eu-west-3.amazonaws.com/0.png"
-            style={{ width: 200, height: 200 }}
-          />
+          </View>
+          <View style={{ flexDirection: "row" }}>
+            <Image
+              source="https://sagehack.s3.eu-west-3.amazonaws.com/0.png"
+              style={{ width: 200, height: 200 }}
+            />
+            <Image
+              source="https://sagehack.s3.eu-west-3.amazonaws.com/framer_129845.png"
+              style={{ width: 200, height: 200 }}
+            />
+          </View>
+          <View style={{ flexDirection: "row" }}>
+            <Image
+              source="https://sagehack.s3.eu-west-3.amazonaws.com/20172349.png"
+              style={{ width: 200, height: 200 }}
+            />
+            <Image
+              source="https://sagehack.s3.eu-west-3.amazonaws.com/sdwfdeotz3ujbaeqsae5.png"
+              style={{ width: 200, height: 200 }}
+            />
+          </View>
           <Image
             source="https://sagehack.s3.eu-west-3.amazonaws.com/732c2a360edfdef425ff097b02830ad5e1880ab8.png"
             style={{ width: 300, height: 75 }}
@@ -447,11 +463,7 @@ class App extends Component {
             style={{ width: 300, height: 75 }}
           />
           <Image
-            source="https://sagehack.s3.eu-west-3.amazonaws.com/20172349.png"
-            style={{ width: 200, height: 200 }}
-          />
-          <Image
-            source="https://sagehack.s3.eu-west-3.amazonaws.com/sdwfdeotz3ujbaeqsae5.png"
+            source="https://sagehack.s3.eu-west-3.amazonaws.com/LJf-7p3B.png"
             style={{ width: 200, height: 200 }}
           />
         </View>
