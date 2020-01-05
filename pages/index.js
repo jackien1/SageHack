@@ -18,7 +18,7 @@ class App extends Component {
       <ScrollView contentContainerStyle={{ flex: 1 }}>
         <View
           style={{
-            height: 900,
+            marginTop: 150,
             justifyContent: "center",
             alignItems: "center",
             textAlign: "center"
@@ -53,8 +53,8 @@ class App extends Component {
 
         <View
           style={{
+            marginTop: 150,
             alignItems: "center",
-            height: 500,
             justifyContent: "center"
           }}
         >
@@ -77,16 +77,14 @@ class App extends Component {
 
           <View
             style={{
-              flexDirection: "row",
+              flexDirection: "column",
               justifyContent: "space-around",
               marginTop: 25
             }}
           >
-            <div>
-              <Text style={{ fontSize: 20 }}>
-                <Text style={{ fontStyle: "italic" }}> Educational </Text> 📚
-              </Text>
-            </div>
+            <Text style={{ fontSize: 20 }}>
+              <Text style={{ fontStyle: "italic" }}> Educational 📚</Text>
+            </Text>
 
             <div>
               <Text style={{ fontSize: 20 }}>
@@ -104,8 +102,34 @@ class App extends Component {
 
         <View
           style={{
+            marginTop: 150,
             alignItems: "center",
-            height: 500,
+            justifyContent: "center"
+          }}
+        >
+          <div style={{ textAlign: "center" }}>
+            <Text
+              style={{
+                fontSize: 30,
+                fontWeight: "bold"
+              }}
+            >
+              Potential Prizes
+            </Text>
+            <View style={{ flexDirection: "column" }}>
+              <Text style={{ fontSize: 20 }}>Nintendo Switch</Text>
+              <Text style={{ fontSize: 20 }}>Framer X Subscription</Text>
+              <Text style={{ fontSize: 20 }}>Creative Tim Big Bundle</Text>
+              <Text style={{ fontSize: 20 }}>Egghead.io Subscription</Text>
+              <Text style={{ fontSize: 20 }}>Wolfam Subscription</Text>
+            </View>
+          </div>
+        </View>
+
+        <View
+          style={{
+            marginTop: 150,
+            alignItems: "center",
             justifyContent: "center"
           }}
         >
@@ -133,7 +157,7 @@ class App extends Component {
                   textAlign: "center"
                 }}
               >
-                Day One (Friday)
+                Day One (Friday, 01/17/2020)
               </Text>
             </View>
             <View
@@ -179,7 +203,7 @@ class App extends Component {
                   marginBottom: 15
                 }}
               >
-                *Participants return home (not overnight event)*
+                *Participants return home (not an overnight event)*
               </Text>
             </View>
 
@@ -190,7 +214,7 @@ class App extends Component {
                   textAlign: "center"
                 }}
               >
-                Day Two (Saturday)
+                Day Two (Saturday, 01/18/2020)
               </Text>
             </View>
             <View
@@ -235,9 +259,142 @@ class App extends Component {
 
         <View
           style={{
-            justifyContent: "center",
+            marginTop: 150,
             alignItems: "center",
-            height: 500
+            justifyContent: "center"
+          }}
+        >
+          <View style={{ textAlign: "center" }}>
+            <Text
+              style={{
+                fontSize: 30,
+                fontWeight: "bold"
+              }}
+            >
+              Meet Our Judges
+            </Text>
+
+            <View style={{ flexDirection: "row" }}>
+              <View style={{ alignItems: "center" }}>
+                <Image
+                  source={{
+                    uri:
+                      "https://sagehack.s3.eu-west-3.amazonaws.com/SandyPic.jpg"
+                  }}
+                  style={{ height: 160, width: 160 }}
+                />
+                <Text style={{ fontWeight: "bold" }}>Sandy Irani</Text>
+                <Text>Computer Science Professor (UCI)</Text>
+              </View>
+              <View>
+                <Image style={{ height: 160, width: 160 }} />
+                <Text style={{ fontWeight: "bold" }}>TBD</Text>
+                <Text>TBD</Text>
+              </View>
+              <View>
+                <Image style={{ height: 160, width: 160 }} />
+                <Text style={{ fontWeight: "bold" }}>TBD</Text>
+                <Text>TBD</Text>
+              </View>
+            </View>
+          </View>
+        </View>
+
+        <View
+          style={{
+            marginTop: 150,
+            alignItems: "center",
+            justifyContent: "center"
+          }}
+        >
+          <View style={{ textAlign: "center" }}>
+            <Text
+              style={{
+                fontSize: 30,
+                fontWeight: "bold"
+              }}
+            >
+              Meet Our Team
+            </Text>
+
+            <View style={{ flexDirection: "row" }}>
+              <View>
+                <Image
+                  source={{
+                    uri: "https://sagehack.s3.eu-west-3.amazonaws.com/Face.png"
+                  }}
+                  style={{ height: 160, width: 160 }}
+                />
+                <Text style={{ fontWeight: "bold" }}>Jackie Ni</Text>
+                <Text>Director</Text>
+              </View>
+              <View>
+                <Image
+                  source={{
+                    uri:
+                      "https://sagehack.s3.eu-west-3.amazonaws.com/Screen+Shot+2020-01-04+at+7.05.05+PM.png"
+                  }}
+                  style={{ height: 160, width: 160 }}
+                />
+                <Text style={{ fontWeight: "bold" }}>Hannah Ren</Text>
+                <Text>Community Outreach</Text>
+              </View>
+              <View>
+                <Image
+                  source={{
+                    uri:
+                      "https://sagehack.s3.eu-west-3.amazonaws.com/Screen+Shot+2020-01-04+at+7.05.22+PM.png"
+                  }}
+                  style={{ height: 160, width: 160 }}
+                />
+                <Text style={{ fontWeight: "bold" }}>Emir Karabeg</Text>
+                <Text>Sponsorships</Text>
+              </View>
+            </View>
+
+            <View style={{ flexDirection: "row", marginTop: 10 }}>
+              <View>
+                <Image
+                  source={{
+                    uri:
+                      "https://sagehack.s3.eu-west-3.amazonaws.com/Screen+Shot+2020-01-04+at+7.05.38+PM.png"
+                  }}
+                  style={{ height: 160, width: 160 }}
+                />
+                <Text style={{ fontWeight: "bold" }}>Brandon Phan</Text>
+                <Text>Logistics</Text>
+              </View>
+              <View>
+                <Image
+                  source={{
+                    uri:
+                      "https://sagehack.s3.eu-west-3.amazonaws.com/Screen+Shot+2020-01-04+at+7.05.30+PM.png"
+                  }}
+                  style={{ height: 160, width: 160 }}
+                />
+                <Text style={{ fontWeight: "bold" }}>Jeffrey Walbridge</Text>
+                <Text>Design</Text>
+              </View>
+              <View>
+                <Image
+                  source={{
+                    uri:
+                      "https://sagehack.s3.eu-west-3.amazonaws.com/Screen+Shot+2020-01-04+at+7.05.50+PM.png"
+                  }}
+                  style={{ height: 160, width: 160 }}
+                />
+                <Text style={{ fontWeight: "bold" }}>Alex Paek</Text>
+                <Text>Social Media</Text>
+              </View>
+            </View>
+          </View>
+        </View>
+
+        <View
+          style={{
+            marginTop: 150,
+            justifyContent: "center",
+            alignItems: "center"
           }}
         >
           <Text style={{ fontSize: 30, fontWeight: "bold" }}>FAQ</Text>
@@ -373,7 +530,52 @@ class App extends Component {
               </View>
             </View>
           </TouchableWithoutFeedback>
-
+          <TouchableWithoutFeedback>
+            <View style={{ width: 350 }}>
+              <Text
+                style={{
+                  fontSize: 20,
+                  borderWidth: 1,
+                  borderRadius: 2,
+                  borderColor: "#ddd",
+                  borderBottomWidth: 0,
+                  shadowColor: "#000",
+                  shadowOffset: { width: 0, height: 2 },
+                  shadowOpacity: 0.1,
+                  shadowRadius: 2,
+                  padding: 5
+                }}
+              >
+                Can you form a team beforehand?
+              </Text>
+              <View>
+                <Text>Yes.</Text>
+              </View>
+            </View>
+          </TouchableWithoutFeedback>
+          <TouchableWithoutFeedback>
+            <View style={{ width: 350 }}>
+              <Text
+                style={{
+                  fontSize: 20,
+                  borderWidth: 1,
+                  borderRadius: 2,
+                  borderColor: "#ddd",
+                  borderBottomWidth: 0,
+                  shadowColor: "#000",
+                  shadowOffset: { width: 0, height: 2 },
+                  shadowOpacity: 0.1,
+                  shadowRadius: 2,
+                  padding: 5
+                }}
+              >
+                Is this an overnight event?
+              </Text>
+              <View>
+                <Text>No.</Text>
+              </View>
+            </View>
+          </TouchableWithoutFeedback>
           <TouchableWithoutFeedback>
             <View style={{ width: 350 }}>
               <Text
@@ -401,8 +603,8 @@ class App extends Component {
 
         <View
           style={{
+            marginTop: 150,
             alignItems: "center",
-            height: 1000,
             justifyContent: "center"
           }}
         >
@@ -410,8 +612,7 @@ class App extends Component {
             style={{
               flexDirection: "column",
               justifyContent: "center",
-              alignItems: "center",
-              textAlign: "center"
+              alignItems: "center"
             }}
           >
             <Text
@@ -465,7 +666,14 @@ class App extends Component {
           <Image
             source="https://sagehack.s3.eu-west-3.amazonaws.com/LJf-7p3B.png"
             style={{ width: 200, height: 200 }}
+            onClick={() => Linking.openURL("https://balsamiq.com/")}
           />
+        </View>
+
+        <View
+          style={{ marginTop: 150, alignItems: "center", marginBottom: 15 }}
+        >
+          <Text style={{ fontSize: 20 }}>Copyright © 2019 SageHack</Text>
         </View>
       </ScrollView>
     );
