@@ -314,6 +314,50 @@ class App extends Component {
                 fontWeight: "bold"
               }}
             >
+              Meet Our Mentors
+            </Text>
+
+            <View style={{ flexDirection: "row" }}>
+              <View style={{ alignItems: "center" }}>
+                <Image
+                  source={{
+                    uri:
+                      "https://sagehack.s3.eu-west-3.amazonaws.com/headshot.JPG"
+                  }}
+                  style={{ height: 160, width: 160 }}
+                />
+                <Text style={{ fontWeight: "bold" }}>Ryan Simpson</Text>
+                <Text>Brown Student</Text>
+              </View>
+              <View>
+                <Image
+                  source={{
+                    uri:
+                      "https://sagehack.s3.eu-west-3.amazonaws.com/APC_0293.png"
+                  }}
+                  style={{ height: 160, width: 160 }}
+                />
+                <Text style={{ fontWeight: "bold" }}>Timothy Guo</Text>
+                <Text>Sage Hill Student</Text>
+              </View>
+            </View>
+          </View>
+        </View>
+
+        <View
+          style={{
+            marginTop: 150,
+            alignItems: "center",
+            justifyContent: "center"
+          }}
+        >
+          <View style={{ textAlign: "center" }}>
+            <Text
+              style={{
+                fontSize: 30,
+                fontWeight: "bold"
+              }}
+            >
               Meet Our Team
             </Text>
 
@@ -671,7 +715,7 @@ class App extends Component {
         </View>
 
         <View
-          style={{ marginTop: 150, alignItems: "center", marginBottom: 15 }}
+          style={{ marginTop: 150, alignItems: "center", marginyBottom: 15 }}
         >
           <Text style={{ fontSize: 20 }}>Copyright © 2019 SageHack</Text>
         </View>
