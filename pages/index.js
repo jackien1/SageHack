@@ -82,20 +82,14 @@ class App extends Component {
               marginTop: 25
             }}
           >
-            <Text style={{ fontSize: 20 }}>
-              <Text style={{ fontStyle: "italic" }}> Educational 📚</Text>
-            </Text>
+            <Text style={{ fontSize: 20 }}>Educational 📚</Text>
 
             <div>
-              <Text style={{ fontSize: 20 }}>
-                <Text style={{ fontStyle: "italic" }}> Health </Text> 🏥
-              </Text>
+              <Text style={{ fontSize: 20 }}>Health 🏥</Text>
             </div>
 
             <div>
-              <Text style={{ fontSize: 20 }}>
-                <Text style={{ fontStyle: "italic" }}> Environmental </Text> 🍃
-              </Text>
+              <Text style={{ fontSize: 20 }}>Environmental 🍃</Text>
             </div>
           </View>
         </View>
@@ -114,7 +108,7 @@ class App extends Component {
                 fontWeight: "bold"
               }}
             >
-              Potential Prizes
+              Prizes
             </Text>
             <View style={{ flexDirection: "column" }}>
               <Text style={{ fontSize: 20 }}>Nintendo Switch</Text>
@@ -122,6 +116,7 @@ class App extends Component {
               <Text style={{ fontSize: 20 }}>Creative Tim Big Bundle</Text>
               <Text style={{ fontSize: 20 }}>Egghead.io Subscription</Text>
               <Text style={{ fontSize: 20 }}>Wolfam Subscription</Text>
+              <Text style={{ fontSize: 20 }}>Sketch Subscription</Text>
             </View>
           </div>
         </View>
@@ -148,7 +143,7 @@ class App extends Component {
                 textAlign: "center"
               }}
             >
-              Schedule
+              Schedule (Tentative)
             </Text>
             <View>
               <Text
@@ -328,6 +323,7 @@ class App extends Component {
                 />
                 <Text style={{ fontWeight: "bold" }}>Ryan Simpson</Text>
                 <Text>Brown Student</Text>
+                <Text style={{ fontStyle: "italic" }}>React</Text>
               </View>
               <View>
                 <Image
@@ -339,6 +335,7 @@ class App extends Component {
                 />
                 <Text style={{ fontWeight: "bold" }}>Timothy Guo</Text>
                 <Text>Sage Hill Student</Text>
+                <Text style={{ fontStyle: "italic" }}>React Native</Text>
               </View>
             </View>
           </View>
@@ -715,7 +712,7 @@ class App extends Component {
         </View>
 
         <View
-          style={{ marginTop: 150, alignItems: "center", marginyBottom: 15 }}
+          style={{ marginTop: 150, alignItems: "center", marginBottom: 25 }}
         >
           <Text style={{ fontSize: 20 }}>Copyright © 2019 SageHack</Text>
         </View>
