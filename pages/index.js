@@ -707,7 +707,12 @@ class App extends Component {
           <Image
             source="https://sagehack.s3.eu-west-3.amazonaws.com/LJf-7p3B.png"
             style={{ width: 200, height: 200 }}
-            onClick={() => Linking.openURL("https://balsamiq.com/")}
+            onClick={() => Linking.openURL("https://balsamiq.com")}
+          />
+          <Image
+            source="https://sagehack.s3.eu-west-3.amazonaws.com/SDSW-San-Diego-Startup-Week-2017-Sponsor-_5-Stickermule.png"
+            style={{ width: 200, height: 200 }}
+            onClick={() => Linking.openURL("https://stickermule.com")}
           />
         </View>
 
